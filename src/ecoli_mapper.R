@@ -2,6 +2,7 @@ library(sf)
 library(tidyverse)
 library(mapview)
 library(nhdplusTools)
+library(praise)
 
 ecoli_dat <- read_csv('data/Ecoli_sites.csv') %>%
   select(-1) %>%
@@ -18,3 +19,4 @@ ecoli_sub <- ecoli_dat %>%
 comid <- discover_nhdplus_id(ecoli_sub[1,])
 
 
+praise()
