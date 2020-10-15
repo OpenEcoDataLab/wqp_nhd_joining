@@ -17,4 +17,4 @@ ecoli_sub <- ecoli_dat %>%
 
 comid <- discover_nhdplus_id(ecoli_sub[1,])
 
-comids
+
